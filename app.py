@@ -336,7 +336,7 @@ with tab2:
         )
 
         st.markdown(f"#### OLAP Pivot Matrix: `{row_dim}` vs. `{col_dim}` (Metric: `{metric_choice}`)")
-        st.dataframe(pivot_df.style.background_gradient(cmap="Blues"), use_container_width=True)
+        st.dataframe(pivot_df, use_container_width=True)
 
         # Plotly Heatmap visualization of the Pivot Table
         fig_heat = px.imshow(
